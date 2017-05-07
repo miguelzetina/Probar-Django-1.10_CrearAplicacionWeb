@@ -13,8 +13,8 @@ class RegModelForm(forms.ModelForm):
         email_base, proveedor = email.split("@")
         dominio, extension = proveedor.split(".")
         if not extension == "edu":
-            raise forms.ValidationError
-            ("Por favor utiliza un correo con la extension .edu")
+            raise forms.ValidationError(
+                "Por favor utiliza un correo con la extension .edu")
         return email
 
     def clean_nombre(self):
@@ -38,6 +38,6 @@ class ContactForm(forms.Form):
         email_base, proveedor = email.split("@")
         dominio, extension = proveedor.split(".")
         if not extension == "edu":
-            raise forms.ValidationError
-            ("Por favor utiliza un correo con la extension .edu")
+            raise forms.ValidationError(
+                "Por favor utiliza un correo con la extension .edu")
         return email

@@ -27,6 +27,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_HOST = 'SMTP.GMAIL.COM'
+EMAIL_HOST_USER = 'tuCorreo@gmail.com'
+EMAIL_HOST_PASSWORD = 'tuContraseña'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+"""
+Hay que permitir el acceso al coreo en Goola
+https://accounts.google.com/displayunlockcaptcha
+"""
+
+
 
 # Application definition
 
