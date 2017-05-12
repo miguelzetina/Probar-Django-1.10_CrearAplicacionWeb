@@ -54,7 +54,7 @@ def contact(request):
         form_nombre = form.cleaned_data.get("nombre")
         asunto = "Form de contacto"
         email_from = settings.EMAIL_HOST_USER
-        email_to = [email_from, "otrormail@gmail.com"]
+        email_to = [email_from]
         email_mensaje = "%s: %s enviado por %s" %(form_nombre, form_mensaje, form_email)
         send_mail(asunto,
             email_mensaje,
