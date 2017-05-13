@@ -41,7 +41,7 @@ def inicio(request):
         # abc = form_data.get("email")
         # abc2 = form_data.get("nombre")
         # obj = Registrado.objects.create(email=abc, nombre=abc2)
-    return render(request, "inicio.html", context)
+    return render(request, "base.html", context)
 
 
 def contact(request):
